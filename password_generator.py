@@ -23,9 +23,9 @@ password = ""
 # Selecting random letters, symbols, and numbers based on the user's input
 for char in range(1, nr_letters  + 1):
     password += random.choice(letters)
-for char2 in range(1, nr_symbols  + 1):
+for char1 in range(1, nr_symbols  + 1):
     password += random.choice(symbols)
-for char3 in range(1, nr_numbers  + 1):
+for char2 in range(1, nr_numbers  + 1):
     password += random.choice(numbers)
 # Shuffling the password to create a random order and printing it
 # The password is shuffled to ensure that the order of characters is random.
