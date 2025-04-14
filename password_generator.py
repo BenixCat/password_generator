@@ -1,5 +1,6 @@
 # Importing the random module to generate random numbers
 import random
+
 # This is a password generator program that generates a random password based on user input for the number of letters, symbols, and numbers.
 # The program uses the random module to select random characters from predefined lists of letters, symbols, and numbers.
 # The user is prompted to input the desired number of letters, symbols, and numbers for the password.
@@ -21,12 +22,15 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 # Generating a empty password string
 password = ""
 # Selecting random letters, symbols, and numbers based on the user's input
-for char in range(1, nr_letters  + 1):
+for char in range(0, nr_letters):
     password += random.choice(letters)
-for char1 in range(1, nr_symbols  + 1):
+
+for char1 in range(0, nr_symbols):
     password += random.choice(symbols)
-for char2 in range(1, nr_numbers  + 1):
+
+for char2 in range(0, nr_numbers):
     password += random.choice(numbers)
+
 # Shuffling the password to create a random order and printing it
 # The password is shuffled to ensure that the order of characters is random.
 print(''.join(random.sample(password,len(password))))
